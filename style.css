@@ -1,0 +1,122 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+}
+
+/* FUNDO DE CAMPO SOCIETY */
+.background-overlay {
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+              url('campo-fut.webp') no-repeat center center/cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+/* HEADER */
+.header {
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.logo {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 36px; 
+  color: #DAA520;
+  letter-spacing: 2px;
+}
+
+.nav a {
+  margin-left: 25px;
+  font-weight: 500;
+  color: #DAA520;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: #C0C0C0;
+}
+
+/* HERO */
+.hero {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.hero-content {
+  max-width: 700px;
+  padding: 40px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 16px;
+  backdrop-filter: blur(8px);
+}
+
+.hero h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 52px;
+  color: #DAA520;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+.btn {
+  padding: 14px 32px;
+  background-color: #DAA520;
+  color: #000;
+  font-weight: bold;
+  border-radius: 30px;
+  text-decoration: none;
+  box-shadow: 0 0 10px rgba(218, 165, 32, 0.4);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #C0C0C0;
+  transform: scale(1.05);
+}
+
+
+/* FOOTER */
+.footer {
+  padding: 5px;
+  text-align: center;
+  background: #111;
+  font-size: 14px;
+  color: #aaa;
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 12px; /* espaço entre logo e o texto */
+}
+
+.logo-img {
+  height: 48px;
+  width: auto;
+  border-radius: 8px; /* opcional: deixa a logo com cantos arredondados */
+}
+
+
+

@@ -1,0 +1,155 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  background: #000; /* fundo preto */
+}
+
+/* FUNDO DE CAMPO SOCIETY */
+.background-overlay {
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+              url('lisu.jpg') no-repeat center center/cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-size: 120% auto;
+}
+
+/* HEADER */
+.header {
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.logo {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 36px;
+  color: #DAA520;
+  letter-spacing: 2px;
+}
+
+.nav a {
+  font-weight: 500;
+  color: #DAA520;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: #C0C0C0;
+}
+
+/* CONTAINER DO FORMATO */
+.container {
+  max-width: 900px;
+  margin: 40px auto 80px;
+  padding: 30px 40px;
+  background-color: rgba(0,0,0,0.65);
+  border-radius: 16px;
+  color: #f0f0f0;
+  font-size: 18px;
+  line-height: 1.7;
+  backdrop-filter: blur(8px);
+}
+
+/* TÍTULO PRINCIPAL */
+.container h1 {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 48px;
+  color: #DAA520;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* CONTENT */
+.content h2 {
+  font-size: 32px;
+  color: #DAA520;
+  margin-top: 30px;
+}
+
+.content h3 {
+  font-size: 22px;
+  margin-top: 20px;
+  color: #f1c40f;
+}
+
+.content p {
+  margin: 10px 0;
+  line-height: 1.6;
+  font-size: 17px;
+  color: #eee;
+}
+
+.content ul {
+  margin: 10px 0 20px 20px;
+  padding-left: 20px;
+  list-style: disc;
+  color: #ddd;
+}
+
+hr {
+  margin: 40px 0;
+  border: 1px solid #444;
+}
+
+/* Botão Início */
+.btn-home {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 10px 25px;
+  background-color: #DAA520;
+  color: black;
+  font-weight: bold;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-home:hover {
+  background-color: #C0C0C0;
+}
+
+/* Estilo específico para a Sula: mudar cor dos títulos h2 e h3 */
+.sula-section h2,
+.sula-section h3 {
+  color: #287cb4 !important;
+}
+
+/* Cor dos textos da Sula */
+.sula-section p,
+.sula-section ul {
+  color: #ffffff;
+}
+
+/* FOOTER */
+.footer {
+  padding: 10px;
+  text-align: center;
+  background: #111;
+  font-size: 14px;
+  color: #aaa;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-img {
+  height: 48px;
+  width: auto;
+  border-radius: 8px;
+}

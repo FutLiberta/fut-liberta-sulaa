@@ -1,0 +1,184 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+}
+
+/* FUNDO DE CAMPO SOCIETY */
+.background-overlay {
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+              url('museu.jpg') no-repeat center center/cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* HEADER */
+.header {
+  padding: 20px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.logo {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 36px; 
+  color: #DAA520;
+  letter-spacing: 2px;
+}
+
+.nav a {
+  margin-left: 25px;
+  font-weight: 500;
+  color: #DAA520;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: #C0C0C0;
+}
+
+/* HERO */
+.hero {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.hero-content {
+  max-width: 700px;
+  padding: 40px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 16px;
+  backdrop-filter: blur(8px);
+}
+
+.hero h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 52px;
+  color: #DAA520;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 14px 32px;
+  background-color: #DAA520;
+  color: #000;
+  font-weight: bold;
+  border-radius: 30px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  text-decoration: none;
+  box-shadow: 0 0 10px rgba(218, 165, 32, 0.4);
+  font-size: 20px;
+}
+
+.btn:hover {
+  background-color: #C0C0C0;
+  transform: scale(1.05);
+}
+
+/* FOOTER */
+.footer {
+  padding: 5px;
+  text-align: center;
+  background: #111;
+  font-size: 14px;
+  color: #aaa;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-img {
+  height: 48px;
+  width: auto;
+  border-radius: 8px;
+}
+/* NOVOS ESTILOS */
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.champion-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 16px;
+  padding: 20px;
+  width: 220px;
+  min-height: 360px; /* garante mesma altura */
+}
+
+.champion-img {
+  width: 160px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+/* Botão geral */
+.btn {
+  padding: 14px 32px;
+  background-color: #DAA520;
+  color: #000;
+  font-weight: bold;
+  border-radius: 30px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  text-decoration: none;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+  font-size: 20px;
+}
+
+.btn:hover {
+  background-color: #C0C0C0;
+  transform: scale(1.05);
+}
+
+/* Botão específico da Sula */
+.btn-sula {
+  background-color: #287cb4;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(40, 124, 180, 0.4);
+}
+
+.btn-sula:hover {
+  background-color: #1f5c8a;
+}

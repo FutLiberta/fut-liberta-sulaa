@@ -1,0 +1,106 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  background: #000;
+}
+
+/* FUNDO COM IMAGEM */
+.background-overlay {
+  background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+              url('sulafundo.jpg') no-repeat center center/cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* HEADER */
+.header {
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-img {
+  height: 48px;
+  width: auto;
+  border-radius: 8px;
+}
+
+.logo {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 36px;
+  color: #287cb4;
+  letter-spacing: 2px;
+}
+
+.nav a {
+  margin-left: 25px;
+  font-weight: 500;
+  color: #287cb4;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: #C0C0C0;
+}
+
+/* GALERIA */
+.gallery {
+  padding: 150px 50px 40px 20px; /* top | right | bottom | left */
+  flex: 1;
+}
+.gallery h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #287cb4; /* Azul da Sula */
+  text-shadow: 0 0 6px black;
+}
+
+/* GRID DE FOTOS */
+.photos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.photos-grid img {
+  width: 100%;
+  height: 330px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.7);
+  transition: transform 0.3s ease;
+}
+
+.photos-grid img:hover {
+  transform: scale(1.03);
+}
+
+/* FOOTER */
+.footer {
+  padding: 10px;
+  text-align: center;
+  background: #111;
+  font-size: 14px;
+  color: #aaa;
+}
