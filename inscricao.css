@@ -1,0 +1,278 @@
+
+
+* {
+
+  margin: 0;
+
+  padding: 0;
+
+  box-sizing: border-box;
+
+}
+
+
+
+body, html {
+
+  height: 100%;
+
+}
+
+
+
+.background-overlay {
+
+  min-height: 100vh;
+
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+
+              url('campo-fut.webp') center/cover no-repeat;
+
+  display: flex;
+
+  flex-direction: column;
+
+}
+
+
+
+/* topo */
+
+.header {
+
+  padding: 20px 40px;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  background: rgba(0,0,0,0.65);
+
+}
+
+
+
+.logo-img {
+
+  width: 50px;
+
+  border-radius: 6px;
+
+}
+
+
+
+.logo {
+
+  font-family: 'Bebas Neue';
+
+  color: #DAA520;
+
+  margin-left: 10px;
+
+}
+
+
+
+.nav a {
+
+  margin-left: 20px;
+
+  color: #DAA520;
+
+  text-decoration: none;
+
+  font-weight: 600;
+
+}
+
+
+
+.form-area {
+
+  width: 90%;
+
+  max-width: 450px;
+
+  margin: 60px auto;
+
+  padding: 30px;
+
+  background: rgba(0,0,0,0.75);
+
+  border-radius: 14px;
+
+  box-shadow: 0 0 15px black;
+
+  color: white;
+
+}
+
+
+
+h2 {
+
+  text-align: center;
+
+  color: #DAA520;
+
+  margin-bottom: 20px;
+
+}
+
+
+
+.form-inscricao {
+
+  display: flex;
+
+  flex-direction: column;
+
+}
+
+
+
+label {
+
+  margin-top: 10px;
+
+  font-weight: 600;
+
+}
+
+
+
+input, select {
+
+  padding: 12px;
+
+  margin-top: 5px;
+
+  border-radius: 6px;
+
+  border: none;
+
+  background-color: #ffffff;
+
+  color: #000;
+
+}
+
+
+
+
+
+.btn-enviar {
+
+  margin-top: 20px;
+
+  padding: 12px;
+
+  font-size: 18px;
+
+  background: #DAA520;
+
+  border: none;
+
+  border-radius: 10px;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+}
+
+
+
+.btn-enviar:hover {
+
+  background: #c09118;
+
+}
+
+
+
+.footer {
+
+  text-align: center;
+
+  padding: 20px;
+
+  background: rgba(0,0,0,0.55);
+
+  margin-top: auto;
+
+  color: #aaa;
+
+}
+
+#posicoes {
+
+    display: flex;
+
+    gap: 10px;
+
+    flex-wrap: wrap;
+
+}
+
+
+
+.pos-btn {
+
+    padding: 8px 14px;
+
+    border: 2px solid #000000;
+
+    background: #fdfdfd;
+
+    color: rgb(3, 2, 2);
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-size: 14px;
+
+    transition: 0.2s;
+
+}
+
+
+
+.pos-btn.selected {
+
+    border-color: #ffd700;
+
+    background: #333;
+
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.notificacao {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #DAA520;
+    color: black;
+    padding: 15px 20px;
+    border-radius: 10px;
+    font-weight: 600;
+    box-shadow: 0 0 10px black;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: 0.4s ease;
+    z-index: 9999;
+}
+
+.notificacao.show {
+    opacity: 1;
+    transform: translateY(0);
+}
